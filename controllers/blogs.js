@@ -42,7 +42,12 @@ router.delete('/:id', userExtractor, async (request, response) => {
   if (!blog) {
     return response.status(204).end()
   }
-
+  if(!user.id) {
+    return response.status(409).json({ error: 'user.id is undefined!'}) // I added these 409s in case there were old notes where not all filed might've been provided
+  }
+  if(!blog.user) {
+    return response.status(409).json({ error: 'blog.user is undefined!'})
+  }
   if ( user.id.toString() !== blog.user.toString() ) {
     return response.status(403).json({ error: 'user not authorized' })
   }
