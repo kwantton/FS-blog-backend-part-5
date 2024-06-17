@@ -72,7 +72,7 @@ describe('users', () => {
     assert.strictEqual(usersAtEnd.length, usersAtStart.length)
   })
 
-  test.only('same username can not be addwd twice' , async () => {
+  test.only('same username can not be added twice' , async () => {
     const newUser = {
       username: "newuser",
       name: "New User",

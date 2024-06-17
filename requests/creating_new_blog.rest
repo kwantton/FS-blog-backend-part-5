@@ -1,0 +1,13 @@
+// https://fs-blog-app-backend-mongo.onrender.com/api/blogs
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRoaXJkIER1ZGUiLCJpZCI6IjY2NGEwNTFjZDIzMmYxNjBhNjViYjY5ZCIsImlhdCI6MTcxNjI4ODI1M30.Sze_l2JzZMh4FkInxAweoxShjA4hdqxSxyyKxSXhYhw
+
+{
+    "title":"Tryna create a blog without copy-pasting token to SECRET",
+    "author":"Third Dude",
+    "url":"abcdefgh",
+    "likes":0,
+    "userId":"664a051cd232f160a65bb69d"
+}
+// userId has to be an existing one!!! So, check at // https://fs-blog-app-backend-mongo.onrender.com/api/users what you have created (using "creating_new_user.rest") - otherwise you'll get a 400 bad request c:

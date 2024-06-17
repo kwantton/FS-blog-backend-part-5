@@ -1,0 +1,3 @@
+I had copy-pasted folders accidentally from phonebook app at one point, don't remember when, probably at change part 4 -> 5? 
+- I had made a mistake, copying these tests from there too, so now I had to readd all of these tests here (copy-pasting from part 4 blog app backend from GitHub). 
+That's why all of these are new. Not that any of THESE were done in part 5 of course, but that's the reason why.
